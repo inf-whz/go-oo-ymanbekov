@@ -1,0 +1,19 @@
+{{define "login"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kirgisisch-Deutsche Fakultet fur angewandte Informatik</title>
+</head>
+<body>
+<h2 class="h2-title">Anmeldung</h2>
+<form method="post" >
+    <ul id="pass-login">
+        <li><label>Login</label><input type="text" placeholder="A-Z_a-z" name="input_login" /></li>
+        <li><label>Password</label><input type="password" placeholder="A-Za-z_123" name="input_pass" /></li>
+    </ul>
+    <p align="left"><input type="submit" name="submit_enter" id="submit_enter" value="anmelden" /></p>
+</form>
+</body>
+</html>
+{{end}}

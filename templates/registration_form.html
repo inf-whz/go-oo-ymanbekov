@@ -1,0 +1,96 @@
+{{define "registration_form"}}
+<!DOCTYPE html>
+<html lang="en" xmlns:background="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h2 class="h2-title">Registration</h2>
+    <form method="post" id="form_reg" action="reg/handler_reg.html">
+        <p id="reg_message"></p>
+        <div id="block-form-registration">
+            <ul id="form-registration">
+
+                <li>
+                    <label>Name</label>
+                    <span class="star">*</span>
+                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-2"></div>
+                    <input type="text" placeholder="Ulan" name="reg_name" id="reg_name"/>
+
+                </li>
+                <li>
+                    <label>Vorname</label>
+                    <span class="star">*</span>
+                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-2"></div>
+                    <input type="text"  placeholder="Ymanbekov" name="reg_surname" id="reg_surname"/>
+                </li>
+                <li>
+                    <label>Telefonnummer</label>
+                    <span class="star">*</span>
+                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-2"></div>
+                    <input type="text" placeholder="+996 702 123 456" name="reg_phone" id="reg_phone"/>
+                </li>
+                <li>
+                    <label>E-Mail</label>
+                    <span class="star">*</span>
+                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-2"></div>
+                    <input type="text" placeholder="y.ulanbek@gmail.com" name="reg_email" id="reg_email"/>
+                </li>
+                <li>
+                    <label>Wohnort</label>
+                    <span class="star">*</span>
+                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-2"></div>
+                    <input type="text" placeholder="ul.Mira 7 - 33" name="reg_place" id="reg_place"/>
+                </li>
+                <li>
+                    <label>Oblast</label>
+                    <span class="star">*</span>
+                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-2"></div>
+                    <select>
+                        <option>Chui</option>
+                        <option>Issyk-Kul</option>
+                        <option>Talas</option>
+                        <option>Jalal-Abad</option>
+                        <option>Naryn</option>
+                        <option>Osch</option>
+                        <option>Batken</option>
+                    </select>
+                </li>
+                <li>
+                    <label>Ort der Schule</label>
+                    <span class="star">*</span>
+                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-2"></div>
+                    <input type="text" placeholder="Gymnasium nr69" name="reg_art_of_school" id="reg_art_of_school"/>
+                </li>
+                <li>
+                    <label>ORT Gesamptpunktzahl</label>
+                    <span class="star">*</span>
+                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-2"></div>
+                    <input type="text" placeholder="0-240" name="reg_ort" id="reg_ort"/>
+                </li>
+                <li>
+                    <label>ORT mathe</label>
+                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-2"></div>
+                    <input type="text" name="reg_ort_mathe" id="reg_ort_mathe"/>
+                </li>
+                <li>
+                    <label>ORT physik</label>
+                    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-2"></div>
+                    <input type="text" name="reg_ort_physik" id="reg_ort_physik"/>
+                </li>
+                <li>
+                    <div id="block-captcha">
+
+                        <img src="https://www.github.com/dchest/captcha">
+                        <div class="col-xs-8 col-sm-4 col-md-4 col-lg-2"></div>
+                        <input type="text" name="reg_captcha" id="reg_captcha"/>
+                        <p id="reloaded">Erneuen</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p align="left"><input type="submit" name="reg_submit" id="form_submit" value="registrieren"/></p>
+    </form>
+</body>
+</html>
+{{end}}
